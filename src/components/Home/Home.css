@@ -1,0 +1,111 @@
+/* 
+#C3E0E5
+#AFD931
+ADDCE4
+9DCCD4
+A1D5DE
+91CCD6
+
+Next 6 colour codes -
+# *F8CDC7* 
+# *F7C3BD* 
+# *FABCB4* 
+# *F8AFA6* 
+# *FFADA4* 
+# *FFA49A*
+
+*/
+
+.home {
+    padding-top: 10vh;
+    height: 100vh;
+    background-image: url('bg_png.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.container-fluid {
+    height: 100%;
+}
+
+a:link {
+    text-decoration: none;
+    color: black;
+}
+
+.cv__download-btn:hover {
+    color: rgba(19, 166, 159, 255);
+    box-shadow: 0px 10px 50px rgba(19, 166, 159, 255);
+    background-color: rgba(49, 48, 48, 0) !important;
+}
+
+.cv__download-btn {
+    padding: .5rem;
+    border-radius: .5rem;
+    width: 8rem;
+    background: rgba(10, 10, 10, 0.2) !important; 
+    backdrop-filter: blur(2px) saturate(125%); 
+    color: rgb(9, 9, 9);
+}
+
+.intro_left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.intro_right {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.brand__name{
+    padding: .5rem;
+    border-radius: .5rem;
+    text-align: center;
+    background: rgba(255,255,255,0.4) !important; 
+    backdrop-filter: blur(30px) saturate(125%); 
+}
+
+@media screen and (min-width: 790px) {
+    .intro_left {
+        align-items: flex-start;
+        height: 100vh;
+    }
+    .intro_right {
+        align-items: flex-end;
+        height: 100vh;
+    }
+    .img__cv {
+        margin: 1rem 0rem 1rem 2rem;
+    }
+    .brand__name{
+        font-weight: bold;
+        font-size: 2rem;
+        width: 40rem
+    }
+}
+
+@media screen and (max-width: 790px) {
+    .intro_left {
+        align-items: center;
+        text-align: center;
+    }
+    .intro_right {
+        align-items: center;
+    }
+    .img__web{
+        scale: .7;
+        margin-top: -2rem;
+    }
+    .img__cv{
+        scale: .7;
+        margin-top: 1rem;
+    }
+    .brand__name{
+        margin-top: -1rem;
+        margin-bottom: -2rem;
+        font-weight: bold;
+        font-size: 1.5rem;
+    }
+}
