@@ -1,6 +1,7 @@
 @font-face {
   font-family: Gumela;
   src: url('fonts/Gumela.otf')
+   /* src: url('fonts/MontserratAlternates-Regular.otf') */
 }
 *{
   font-family: 'Gumela';
@@ -18,4 +19,21 @@ body {
 code {
     font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+textarea:hover, 
+input:hover, 
+textarea:active, 
+input:active, 
+textarea:focus, 
+input:focus,
+button:focus,
+button:active,
+button:hover,
+label:focus,
+.btn:active,
+.btn.active
+{
+    outline:0px !important;
+    -webkit-appearance:none;
+    box-shadow: none !important;
 }

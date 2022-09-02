@@ -1,111 +1,95 @@
-/* 
-#C3E0E5
-#AFD931
-ADDCE4
-9DCCD4
-A1D5DE
-91CCD6
-
-Next 6 colour codes -
-# *F8CDC7* 
-# *F7C3BD* 
-# *FABCB4* 
-# *F8AFA6* 
-# *FFADA4* 
-# *FFA49A*
-
-*/
-
 .home {
-    padding-top: 10vh;
     height: 100vh;
-    background-image: url('bg_png.png');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+    background-color: black;
+    color: white;
+    padding-top: 10vh;
 }
-.container-fluid {
-    height: 100%;
+@keyframes wave-animation {
+    0% { transform: rotate( 0.0deg) }
+   10% { transform: rotate(14.0deg) }  /* The following five values can be played with to make the waving more or less extreme */
+   20% { transform: rotate(-8.0deg) }
+   30% { transform: rotate(14.0deg) }
+   40% { transform: rotate(-4.0deg) }
+   50% { transform: rotate(10.0deg) }
+   60% { transform: rotate( 0.0deg) }  /* Reset for the last half to pause */
+  100% { transform: rotate( 0.0deg) }
 }
-
-a:link {
-    text-decoration: none;
-    color: black;
-}
-
-.cv__download-btn:hover {
-    color: rgba(19, 166, 159, 255);
-    box-shadow: 0px 10px 50px rgba(19, 166, 159, 255);
-    background-color: rgba(49, 48, 48, 0) !important;
+.__grad {
+    background: linear-gradient(to bottom right, rgba(255, 255, 255, 0) 52.9%, rgb(255, 255, 255) 49.1%);
 }
 
-.cv__download-btn {
-    padding: .5rem;
-    border-radius: .5rem;
-    width: 8rem;
-    background: rgba(10, 10, 10, 0.2) !important; 
-    backdrop-filter: blur(2px) saturate(125%); 
-    color: rgb(9, 9, 9);
-}
-
-.intro_left {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-
-.intro_right {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-.brand__name{
-    padding: .5rem;
-    border-radius: .5rem;
+.section__brand{
     text-align: center;
-    background: rgba(255,255,255,0.4) !important; 
-    backdrop-filter: blur(30px) saturate(125%); 
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+.__emoji__hi{
+    font-size: 2.5rem;
+    animation-name: wave-animation;  /* Refers to the name of your @keyframes element below */
+    animation-duration: 2.5s;        /* Change to speed up or slow down */
+    animation-iteration-count: infinite;  /* Never stop waving :) */
+    transform-origin: 70% 70%;       /* Pivot around the bottom-left palm */
+    display: inline-block;
+  
+}
+.brand__name {
+    font-size: 2.5rem;
+    color: rgb(255, 149, 81);
 }
 
-@media screen and (min-width: 790px) {
-    .intro_left {
-        align-items: flex-start;
-        height: 100vh;
-    }
-    .intro_right {
-        align-items: flex-end;
-        height: 100vh;
-    }
-    .img__cv {
-        margin: 1rem 0rem 1rem 2rem;
-    }
-    .brand__name{
-        font-weight: bold;
-        font-size: 2rem;
-        width: 40rem
-    }
+.left__intro {
+    height: 80vh;
+    color: white
+}
+.img-laptop:hover{
+    transition: 1s;
+    scale: 1.1;
+}
+.right__intro {
+    height: 80vh;
 }
 
+.download_cv_btn {
+    position: absolute;
+    margin-left: -16rem;
+    margin-top: 6rem;
+    width: 7rem;
+    border-radius: 1rem;
+    justify-self: center;
+    text-align: center;
+    color : rgb(255, 149, 81)
+}
+.download_cv_btn:link{
+    text-decoration: none !important;
+    color: rgb(255, 149, 81) !important;
+}
+.download_cv_btn:hover{
+    text-decoration: none !important;
+    color: black !important;
+}
 @media screen and (max-width: 790px) {
-    .intro_left {
-        align-items: center;
-        text-align: center;
+    .section__brand{
+        font-size: 2rem;
+        font-size: bold;
     }
-    .intro_right {
-        align-items: center;
+    .left__intro {
+        padding-top: 2rem;
+        height: 40vh;
     }
-    .img__web{
-        scale: .7;
-        margin-top: -2rem;
+
+    .right__intro {
+        height: 40vh;
     }
-    .img__cv{
-        scale: .7;
-        margin-top: 1rem;
+    .brand__name {
+        font-size: 1.6rem;
     }
-    .brand__name{
-        margin-top: -1rem;
-        margin-bottom: -2rem;
-        font-weight: bold;
-        font-size: 1.5rem;
+    .__emoji__hi{
+        font-size: 1.6rem;
+    }
+    .download_cv_btn {
+        position: absolute;
+        margin-top: 3rem;
+        margin-left: -11rem;
+        color: rgb(255, 159, 41);
     }
 }
