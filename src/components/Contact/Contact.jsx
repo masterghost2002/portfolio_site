@@ -28,18 +28,18 @@ export default function Contact() {
                         <h2 className='mailsection__'>Send a Mail</h2>
                         <form onSubmit={sendEmail} className="contact_us">
                             <div className="mb-1">
-                                <label for="fullname" className='form-label text-muted'>Full Name</label>
-                                <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="John Vick" name='fullname' />
-                                <label for="fullname" className='form-label text-muted' >Subject</label>
-                                <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="John Vick" name='subject' />
-                                <label for="exampleFormControlInput1" class="form-label text-muted" >Email address</label>
-                                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com" name='emailAddress' />
+                                <label htmlFor="fullname" className='form-label text-muted'>Full Name</label>
+                                <input type="text" className="form-control" id="exampleFormControlInput1" placeholder="John Vick" name='fullname' />
+                                <label htmlFor="fullname" className='form-label text-muted' >Subject</label>
+                                <input type="text" className="form-control" id="exampleFormControlInput1" placeholder="John Vick" name='subject' />
+                                <label htmlFor="exampleFormControlInput1" className="form-label text-muted" >Email address</label>
+                                <input type="email" className="form-control" id="exampleFormControlInput1" placeholder="name@example.com" name='emailAddress' />
                             </div>
                             <div className="mb-1">
-                                <label for="exampleFormControlTextarea1" class="form-label text-muted" >Message</label>
-                                <textarea class="form-control" id="exampleFormControlTextarea1" rows="2" name='message'></textarea>
+                                <label htmlFor="exampleFormControlTextarea1" className="form-label text-muted" >Message</label>
+                                <textarea className="form-control" id="exampleFormControlTextarea1" rows="2" name='message'></textarea>
                             </div>
-                            <button type='submit' className='btn btn-send'>Send</button>
+                            <button type='submit' className='btn btn-send'>Send 📩</button>
                         </form>
                     </div>
                     <div className="col-lg-6">

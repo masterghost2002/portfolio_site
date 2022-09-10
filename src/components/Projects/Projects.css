@@ -49,6 +49,6 @@
 }
 .__bottom_card:hover{
     border-radius: 1rem;
-    scale: 1.1;
-    transition: .4s;
+    scale: 1.04;
+    transition: .6s;
 }

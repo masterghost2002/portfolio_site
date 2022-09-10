@@ -1,7 +1,5 @@
 import React from 'react'
 import './Home.css'
-// import Web from './web4.png';
-// import CV from './cv_png.png';
 import CV_link from '../../assests/files/rakesh_resume1.pdf';
 import Lap from '../../assests/images/lap2.png'
 export default function Home() {
@@ -15,6 +13,7 @@ export default function Home() {
               <div className="container-fluid ">
                 <span className='brand__name'>Hello there!<span className='__emoji__hi'>👋</span> </span><br></br>
                 <span className='brand__name'>I' Rakesh Dhariwal</span><br></br>
+                <a href="#contact" className='_contactMe btn'>Contact Me 📧</a>
               </div>
             </div>
           </div>

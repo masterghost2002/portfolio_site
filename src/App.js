@@ -9,7 +9,7 @@ function App() {
     <>
     <NavBar/>
     <Home/>
-    {/* <Skills/> */}
+    <Skills/>
     <Projects/>
     <Contact/>
     </>

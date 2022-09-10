@@ -1,20 +1,26 @@
 .skills{
-    background-image: url('../../assests/images/skills__jpeg.jpeg');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+    min-height: 100vh;
+    background-color: black;
+    color: white;
     padding-top: 10vh;
+    padding-bottom: 1rem;
 }
-.skills_bx{
-    font-size: 4rem;
-} 
-.main__skills{
-    height: 100vh;
+.__leftheading{
+    font-size: 1.5rem;
+    text-align: center;
 }
-@media screen and (max-width: 790px) {
-    .main__skills{
-        text-align: center;
-        padding-top: 25vh;
-        gap: 2rem;
-    }
+.__leftContainer{
+    padding-bottom: 1rem;
 }
+.progress{
+    height: 30px;
+    border-radius: 10px;
+    border: none;
+    background: rgb(48, 48, 48);
+}
+.progress-bar{
+    border-radius: 0 10px 10px 0;
+    color: black;
+    font-weight: bolder;
+}
+

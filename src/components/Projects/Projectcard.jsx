@@ -10,8 +10,8 @@ export default function Projectcard(props) {
                 <li className="list-group-item text-muted">{props.desc}</li>
             </ul>
             <div className="d-flex card-body __bottom_card justify-content-between">
-                <a href={props.source_code} class="card-link">Source Code</a>
-                <a href={props.live_link} class="card-link">Live Site</a>
+                <a href={props.source_code} className="card-link">Source Code</a>
+                <a href={props.live_link} className="card-link">Live Site</a>
             </div>
         </div>
     )
