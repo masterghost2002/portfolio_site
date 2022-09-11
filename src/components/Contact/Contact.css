@@ -1,0 +1,60 @@
+.contact {
+    /* height: 100vh; */
+    padding-top: 10vh;
+    padding-bottom: 1rem;
+    background-color: black;
+    color: white;
+}
+.form-control:focus{
+    outline: 0 !important;
+    border: 2px solid black;
+}
+.form-control{
+    outline: none;
+    border: none;
+    background-color: rgba(218, 218, 217, 0.916);
+}
+.btn-send{
+    background-color: rgb(248, 175, 67);
+    border-radius: .5rem;
+    width: 100%;
+    height: 2.5rem;
+}
+.contact_us{
+    padding-bottom: .5rem;
+}
+.social__{
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+.aboutsection__{
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+.mailsection__{
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+.social__icons{
+    /* border: 1px solid black; */
+    display: flex;
+    justify-content: space-between;
+}
+.s_icons{
+    width: 2rem;
+    height: 2rem;
+    transition: .2s;
+}
+.s_icons:hover{
+    transform: scale(1.2);
+}
+.last__note__{
+    text-align: center;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+.__emoji__hi2{
+    font-size: 4rem;
+}

@@ -1,3 +1,26 @@
 .skills{
-    height: 100vh;
+    min-height: 100vh;
+    background-color: black;
+    color: white;
+    padding-top: 10vh;
+    padding-bottom: 1rem;
 }
+.__leftheading{
+    font-size: 1.5rem;
+    text-align: center;
+}
+.__leftContainer{
+    padding-bottom: 1rem;
+}
+.progress{
+    height: 30px;
+    border-radius: 10px;
+    border: none;
+    background: rgb(48, 48, 48);
+}
+.progress-bar{
+    border-radius: 0 10px 10px 0;
+    color: black;
+    font-weight: bolder;
+}
+
