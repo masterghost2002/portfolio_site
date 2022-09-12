@@ -3,16 +3,16 @@
     top: 0;
     width: 100%;
     z-index: 1;
-    background: rgba(11, 11, 11, 0.4) !important; 
-    backdrop-filter: blur(10px) saturate(125%); 
+    background: rgba(11, 11, 11, 0.2) !important; 
+    backdrop-filter: blur(6px) saturate(125%); 
 }
 .navbar-brand{
-    color: rgb(255, 149, 81) !important;
+    color: rgb(220, 214, 247) !important;
 }
 .nav-link{
     color:rgb(248, 248, 248) !important;
-    font-weight: bolder;
+    font-family: Arial, Helvetica, sans-serif;
 }
 .nav-link:hover{
-    color: rgb(89, 206, 143)  !important;
+    color: rgb(177, 178, 255) !important;
 }

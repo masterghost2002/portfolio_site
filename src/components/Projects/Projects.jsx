@@ -2,11 +2,12 @@ import './Projects.css';
 import Projectcard from './Projectcard';
 import React from 'react'
 import Project__data from '../../assests/files/project_data.json';
+import p_png from '../../assests/images/projects.png'
 export default function Projects() {
     return (
         <section className='__projects' id='projects'>
             <div className="container-fluid">
-                <h1 className='section__brand'>Projects</h1>
+                <h1 className='section__brand'>Projects <img src={p_png} alt="ijj" className="img-fluid" /></h1>
                 <div className="row justify-content-between">
                     {Project__data.map((element) => {
                         return <div className="col-md-2 col-lg-3 mb-3 animate__animated animate__zoomIn" key={element.id}>

@@ -1,13 +1,14 @@
 .skills{
     min-height: 100vh;
     background-color: black;
-    color: white;
+    color:rgb(254, 251, 246);
     padding-top: 10vh;
     padding-bottom: 1rem;
 }
 .__leftheading{
     font-size: 1.5rem;
     text-align: center;
+    color: rgb(205, 240, 234)
 }
 .__leftContainer{
     padding-bottom: 1rem;

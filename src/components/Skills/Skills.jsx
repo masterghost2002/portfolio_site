@@ -1,10 +1,11 @@
 import React from 'react'
 import './Skills.css'
+import s_png from '../../assests/images/skills.png'
 export default function Skills() {
   return (
     <section className="skills" id="skills">
       <div className="container-fluid">
-        <h1 className='section__brand'>Skills</h1>
+        <h1 className='section__brand'>Skills <img src={s_png} className='img-fluid' alt="ss"></img></h1>
         <div className="row">
           <div className="col-lg-6">
             <div className="container __leftContainer">

@@ -5,7 +5,7 @@ import Hackerrank from '../../assests/social/hackerrank.png'
 import Instagram from '../../assests/social/instagram.png'
 import Leetcode from '../../assests/social/leetcode.png'
 import Linkedin from '../../assests/social/linkedin.png'
-
+import l_png from '../../assests/images/location-pin.png'
 import './Contact.css'
 export default function Contact() {
     function sendEmail(e) {
@@ -21,7 +21,7 @@ export default function Contact() {
     }
     return (
         <section className='contact' id='contact'>
-            <h1 className='section__brand'>Contact</h1>
+            <h1 className='section__brand'>Contact 📧</h1>
             <div className="container-fluid">
                 <div className="row">
                     <div className="col-lg-6">
@@ -51,7 +51,11 @@ export default function Contact() {
                                 </span>
                             </div>
                             <span>
-                                "20 | Rakesh Dhariwal | MERN Stack | Problem Solving
+                                "20 | Rakesh Dhariwal | B.Tech CS(AI)
+                            </span>
+                            <br></br>
+                            <span className='text-muted location'>
+                            <img src={l_png} className='img-fluid' alt="ss"></img> Gurugram, IN
                             </span>
                         </div>
                         <h2 className='social__'>Social</h2>

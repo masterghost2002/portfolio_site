@@ -6,7 +6,7 @@ export default function Home() {
   return (
     <section className='home' id='home'>
       <div className="container-fluid __grad">
-        <h1 className='section__brand'>Home</h1>
+        <h1 className='section__brand'>Home 🏠</h1>
         <div className="row">
           <div className="col-lg-6">
             <div className="d-flex justify-content-between  left__intro animate__animated animate__fadeInLeft">
@@ -21,7 +21,7 @@ export default function Home() {
             <div className="d-flex justify-content-between align-items-lg-center right__intro animate__animated animate__fadeInRight">
               <div className="container-fluid">
                 <img src={Lap} alt="fgfd" className="img-fluid img-laptop" />
-                <a href={CV_link} className='download_cv_btn'>Download CV</a>
+                <a href={CV_link} className='download_cv_btn'>Download CV ⬇️</a>
               </div>
             </div>
           </div>
